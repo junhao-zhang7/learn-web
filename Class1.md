@@ -12,3 +12,5 @@ The use of vscode
 The use of git
 1 node -v//加空格
 2 git clone "https   "//使用git上传项目
+Class 2
+## 这是新的章节
