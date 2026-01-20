@@ -1,0 +1,46 @@
+<form action="/submit" method="post">
+  <!-- 文本+密码 -->
+  <div>
+    <label for="username">用户名：</label>
+    <input type="text" id="username" name="username" placeholder="请输入用户名" required>
+  </div>
+  <div>
+    <label for="pwd">密码：</label>
+    <input type="password" id="pwd" name="pwd" maxlength="16" required>
+  </div>
+
+  <!-- 单选框 -->
+  <div>
+    <span>性别：</span>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">男</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">女</label>
+  </div>
+
+  <!-- 复选框 -->
+  <div>
+    <span>兴趣：</span>
+    <input type="checkbox" id="code" name="hobby" value="code">
+    <label for="code">编程</label>
+    <input type="checkbox" id="read" name="hobby" value="read">
+    <label for="read">阅读</label>
+  </div>
+
+  <!-- 数值+文件 -->
+  <div>
+    <label for="age">年龄：</label>
+    <input type="number" id="age" name="age" min="1" max="120" step="1">
+  </div>
+  <div>
+    <label for="avatar">上传头像：</label>
+    <input type="file" id="avatar" name="avatar" accept="image/png,image/jpg">
+  </div>
+
+  <!-- 按钮 -->
+  <div>
+    <input type="submit" value="提交表单">
+    <input type="reset" value="重置内容">
+    <input type="button" value="普通按钮" onclick="alert('点击了按钮')">
+  </div>
+</form>

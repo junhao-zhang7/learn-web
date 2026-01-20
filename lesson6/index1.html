@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <img
+      src="assets/1.png"
+      alt="这是一张图片"
+      srcset="assets/2.png 2x, assets/3.png 3x"
+    />
+    <video controls width="1" preload="none" poster="assets/1.png">
+      <source src="assets/Greatwall.mp4" type="video/mp4" />
+      <track
+        kind="subtitles"
+        src="subs.vtt"
+        srclang="zh"
+        label="中文"
+        default
+      />
+    </video>
+    <script>
+      const pixelRatio=window.devicePixelRatio
+      console.log(pixelRatio)
+    </script>
+      <li><a href="https://www.baidu.com">baidu</a></li>
+      <li><a href="../lesson5/index.html">index</a></li>
+      <li><a href="mailto:3117207985@qq.com">youxiang</a></li>
+      <li><a href="tel:+13917869672">phone</a></li>
+    </ul>
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+  <div>
+    <p>hello world</p>
+  </div>
+  <div><span>hello world</span></div>
+  <table  bgcolor="#f2f2f2">
+    <caption>计算机专业学生名单</caption>
+    <colgroup>
+    <col span="1" style="background-color: brown;" >
+  <col style=""></colgroup>
+    <thead>
+    <tr>
+      <th>姓名</th>
+      <th>专业</th>
+      <th>生日</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+    <tr>
+      <td colspan="1">zhangsan</td>
+      <td>computer science</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td rowspan="1">zhangsi</td>
+      <td>computer science</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>zhangwu</td>
+      <td>computer science</td>
+      <td>23</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td>总计</td>
+      <td> 100</td>
+    </tr> 
+</tfoot>
+  </table>
+  </body>
+</html>
