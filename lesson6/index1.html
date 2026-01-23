@@ -45,7 +45,7 @@
   <table  bgcolor="#f2f2f2">
     <caption>计算机专业学生名单</caption>
     <colgroup>
-    <col span="1" style="background-color: brown;" >
+    <col  style="background-color: brown;" >
   <col style=""></colgroup>
     <thead>
     <tr>
@@ -78,5 +78,33 @@
     </tr> 
 </tfoot>
   </table>
+  <table border="1" width="400px">
+  <!-- 表头 --> <caption>计算机专业学生名单</caption>
+  <thead>
+    <tr>
+      <th scope="row">学号</th>
+      <th scope="row">姓名</th>
+      <th scope="row">专业</th>
+    </tr>
+  </thead>
+  <!-- 表主体 -->
+  <tbody>
+    <tr>
+      <td>001</td>
+      <td>张三</td>
+      <td rowspan="2">计算机科学与技术</td> <!-- 跨行合并2行 -->
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>李四</td>
+    </tr>
+  </tbody>
+  <!-- 表脚 -->
+  <tfoot>
+    <tr>
+      <td colspan="3" align="center">总计：2 人</td> <!-- 跨列合并3列 -->
+    </tr>
+  </tfoot>
+</table>
   </body>
 </html>
