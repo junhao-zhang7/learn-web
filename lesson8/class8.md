@@ -308,3 +308,19 @@ type 值 用途说明
  
 - 部分 HTML5 新类型（如  date / color ）在不同浏览器的兼容性不同，需按需测试。
 - 原生校验（如  email / url ）可被绕过，后端必须二次校验数据。
+6. // 1. 获取页面中 ID 为 "loginForm" 的表单元素
+const form = document.getElementById("loginForm");
+// 2. 打印获取到的 form 元素（用于调试，看是否成功获取）
+console.log(form);
+// 3. 打印 document 对象（调试用，确认 document 环境正常）
+console.log(document);
+
+// 4. 为表单添加 "submit"（提交）事件监听器
+form.addEventListener("submit", (e) => {
+  // 5. 阻止表单的默认提交行为（核心！避免页面跳转/刷新）
+  e.preventDefault();
+  // 6. 打印事件对象 e（调试用，查看提交事件的详细信息）
+  console.log("e:", e);
+  // 7. 创建 FormData 对象，读取表单中的所有输入数据
+  const fd = new FormData(form);
+});

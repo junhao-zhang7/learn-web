@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form id="loginForm">
+    <form id="loginForm" >
       <!-- 按钮 -->
       email <input type="email" id="123" name="email" />
       <label for="123">password</label>
@@ -28,6 +28,8 @@
         e.preventDefault();
         console.log("e:", e);
         const fd = new FormData(form);
+
+
         const payload = Object.fromEntries(fd.entries());
         console.log(payload);
       });
