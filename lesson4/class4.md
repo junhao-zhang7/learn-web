@@ -17,3 +17,6 @@
 17. &lt:小于号
 18. HTML 常用实体字符
     ![alt text](image.png)
+ARIA:Accessible Rich Internet Application(无障碍富互联网应用规范)
+1. 强化语义，提升对残障用户的友好度
+2. 例：<button>==<div role="button"></div>

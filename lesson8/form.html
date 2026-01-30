@@ -6,11 +6,15 @@
     <title>Document</title>
   </head>
   <body>
-    <form id="loginForm" >
+    <form id="loginForm" action="/login">
       <!-- 按钮 -->
-      email <input type="email" id="123" name="email" />
-      <label for="123">password</label>
-      <input type="password" name="password" />
+      <label for="123">
+        email <input type="email" id="123" name="emailzhang" />
+      </label>
+      <label
+        >password
+        <input type="password"  />
+      </label>
       <div>
         <input type="submit" value="提交表单" />
         <input type="reset" value="重置内容" />
@@ -19,7 +23,7 @@
     </form>
     <div>hello world</div>
     <!-- <input type="reset" value="重置内容" /> -->
-    <script type="module">
+    <!-- <script type="module">
       const form = document.getElementById("loginForm");
       console.log(form);
       console.log(document);
@@ -29,10 +33,10 @@
         console.log("e:", e);
         const fd = new FormData(form);
 
-
         const payload = Object.fromEntries(fd.entries());
         console.log(payload);
       });
-    </script>
+    </script> -->
   </body>
 </html>
+http://127.0.0.1:5501/login?email=3117207985%40qq.com&password=wqrqrfq
