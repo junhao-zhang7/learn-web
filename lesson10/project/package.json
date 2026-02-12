@@ -1,0 +1,19 @@
+{
+  "name": "projectzhang",
+  "version": "1.0.0",
+  "description": "这是关于全栈的项目",
+  "keywords": [
+    "fullstack",
+    "express"
+  ],
+  "license": "ISC",
+  "author": "zhangjunhao",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
