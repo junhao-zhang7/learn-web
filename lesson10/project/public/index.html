@@ -13,7 +13,7 @@
       </label>
       <label
         >password
-        <input type="password"  />
+        <input type="password" name="password" />
       </label>
       <div>
         <input type="submit" value="提交表单" />
@@ -22,21 +22,27 @@
       </div>
     </form>
     <div>hello world</div>
-    <input type="reset" value="重置内容" /> 
-    <!-- <script type="module">
+    <input type="reset" value="重置内容" />
+    <script type="module">
       const form = document.getElementById("loginForm");
       console.log(form);
       console.log(document);
 
-      form.addEventListener("submit", (e) => {
+      form.addEventListener("submit", async (e) => {
         e.preventDefault();
         console.log("e:", e);
         const fd = new FormData(form);
 
         const payload = Object.fromEntries(fd.entries());
         console.log(payload);
+        const result = await fetch("http://127.0.0.1:3000/login", {
+          method: "post",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        console.log(result);
       });
-    </script> -->
+    </script>
   </body>
 </html>
 http://127.0.0.1:5501/login?email=3117207985%40qq.com&password=wqrqrfq
